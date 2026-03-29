@@ -131,8 +131,6 @@ Open a new terminal, activate your virtual environment, and run:
 ```bash
 cd backend
 python -m app.main
-# OR if using uvicorn directly:
-# uvicorn app.main:app --reload
 ```
 
 ### 2. Start the Frontend Development Server
