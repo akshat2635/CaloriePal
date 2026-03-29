@@ -5,19 +5,19 @@ from functools import lru_cache
 class Settings(BaseSettings):
     # API Configuration
     groq_api_key: str
-    groq_model: str = "meta-llama/llama-4-scout-17b-16e-instruct"
+    groq_model: str 
     
     # App Configuration
-    app_name: str = "CaloriePal"
-    debug: bool = True
+    app_name: str 
+    debug: bool 
 
     # Security Configuration
-    secret_key: str = "09876543210"
-    algorithm: str = "HS256"
-    access_token_expire_minutes: int = 10080  # 7 days
+    secret_key: str 
+    algorithm: str 
+    access_token_expire_minutes: int
 
     # Database Configuration
-    database_url: str = "sqlite:///./caloriePal.db"
+    database_url: str 
     
     class Config:
         env_file = ".env"
